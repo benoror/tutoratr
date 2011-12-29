@@ -1,0 +1,14 @@
+<% render :partial => 'application/singular_title', :locals => { :name => @country.name } %>
+
+<h1><%= @country.name %></h1>
+
+<h3>Info</h3>
+
+<div class="tutor-data">
+
+    <%= I18n.t('layout.code') %>: <%= @country.code %>
+    <%= image_tag('flags/'+@country.code.downcase+'.gif') %>
+
+    <br />
+
+</div>

@@ -1,0 +1,29 @@
+<%= render :partial => 'application/singular_title' %>
+
+<h3><%= I18n.t('long.requirement_1') %><h3>
+<ol>
+  <li> * <%= I18n.t('long.requirement_2') %></li>
+  <li> * <%= I18n.t('long.requirement_3') %></li>
+  <li> * <%= I18n.t('long.requirement_4_2') %></li>
+  <li> * <%= I18n.t('long.requirement_5') %></li>
+</ol>
+
+<h3>Info</h3>
+
+<br />
+
+<% form_for(@course) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label I18n.t('layout.name') %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label I18n.t('layout.code') %><br />
+    <%= f.text_field :code %>
+  </p>
+  <p>
+    <%= f.submit I18n.t('layout.create') %>
+  </p>
+<% end %>

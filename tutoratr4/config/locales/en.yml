@@ -1,0 +1,106 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See http://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+en:
+
+  #Controllers
+  ratings: "Ratings"
+  tutors: "Tutors"
+  courses: "Courses"
+  institutions: "Institutions"
+  countries: "Countries"
+  help: "Ayuda"
+
+  #Actions
+  recent: "Recent"
+  new: "New"
+  show: "Show"
+  top: "Top"
+  popular: "Popular"
+  favorites: "Favorites"
+  
+  layout:
+    help: "Help"
+    search: "Search"
+    donate: "Help us donating"
+    sponsors: "Sponsors"
+    top_searches: "Top Searches"
+    search_results: "Search Results"
+    recent: "Recent"
+    show: "Show"
+    email: "E-Mail"
+    average: "Average"
+    institution: "Institution"
+    code: "Code"
+    country: "Country"
+    description: "Description"
+    name: "Name"
+    create: "Create"
+    tutor: "Tutor"
+    course: "Course"
+    comment: "Comment"
+    sender: "Sender Name"
+    optional: "optional"
+
+  long:
+    rating_created: "Rating was successfully created."
+    tutor_created: "Tutor was successfully created.<br/>Wait 48 hours for approval."
+    course_created: "Course was successfully created.<br/>Wait 48 hours for approval."
+    requirement_1: "Requirements"
+    requirement_2: "Before suggesting please check that it doesn't exists already."
+    requirement_3: "Please provide as much information as you can."
+    requirement_4_1: "Email and Institution are useful so we can verify the identity of the tutor."
+    requirement_4_2: "Code is useful so we can verify the identity of the course."
+    requirement_5: "Only serious suggestions will be accepted."
+
+  ratings_section:
+    rate: "Rate"
+    bookmark: "Bookmark"
+    report: "Report"
+    by: "by"
+    anonymous: "anonymous"
+
+  # Used in distance_of_time_in_words(), distance_of_time_in_words_to_now(), time_ago_in_words()
+  datetime:
+    distance_in_words:
+      hace: ""
+      ago: "ago"
+      half_a_minute: "half a minute"
+      less_than_x_seconds:
+        one:   "less than 1 second"
+        other: "less than {{count}} seconds"
+      x_seconds:
+        one:   "1 second"
+        other: "{{count}} seconds"
+      less_than_x_minutes:
+        one:   "less than a minute"
+        other: "less than {{count}} minutes"
+      x_minutes:
+        one:   "1 minute"
+        other: "{{count}} minutes"
+      about_x_hours:
+        one:   "about 1 hour"
+        other: "about {{count}} hours"
+      x_days:
+        one:   "1 day"
+        other: "{{count}} days"
+      about_x_months:
+        one:   "about 1 month"
+        other: "about {{count}} months"
+      x_months:
+        one:   "1 month"
+        other: "{{count}} months"
+      about_x_years:
+        one:   "about 1 year"
+        other: "about {{count}} years"
+      over_x_years:
+        one:   "over 1 year"
+        other: "over {{count}} years"
+    prompts:
+      year:   "Year"
+      month:  "Month"
+      day:    "Day"
+      hour:   "Hour"
+      minute: "Minute"
+      second: "Seconds"
+

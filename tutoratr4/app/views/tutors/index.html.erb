@@ -1,0 +1,20 @@
+<%= render :partial => 'application/index_title' %>
+
+<%= will_paginate @tutors, { :previous_label => "&lt;&lt;", :next_label => "&gt;&gt;" } %>
+
+<% @tutors.each do |tutor| %>
+  <div class="tutor">
+    <span class="rating-from">
+      <%= link_to tutor.institution.name, tutor.institution, :class => 'rating-institution' %> 
+      <%= link_to(image_tag('flags/'+tutor.institution.country.code.downcase+'.gif')	, tutor.institution.country) %>
+    </span>
+    <%= link_to tutor.name, tutor, :class => 'rating-tutor' %>
+  
+    <div class="rating-sender">
+      <%= I18n.t('datetime.distance_in_words.hace') %> <%=h time_ago_in_words(tutor.updated_at.to_time) %> <%= I18n.t('datetime.distance_in_words.ago') %>
+    </div>
+    
+  </div>
+<% end %>
+
+<%= will_paginate @tutors, { :previous_label => "&lt;&lt;", :next_label => "&gt;&gt;" } %>

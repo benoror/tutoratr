@@ -1,0 +1,29 @@
+CREATE TABLE `comments` (
+  `id_tutor` varchar(11) NOT NULL,
+  `id_class` varchar(11) NOT NULL,
+  `rating` int(11) NOT NULL default 0,
+  `comment` text NOT NULL,
+  `sender` varchar(50),
+  `ip` varchar(15),
+  `date` timestamp
+) TYPE=MyISAM AUTO_INCREMENT=3;
+
+CREATE TABLE `classes` (
+  `id` varchar(11) NOT NULL,
+  `name` varchar(200) NOT NULL,
+  PRIMARY KEY  (`id`)
+) TYPE=MyISAM AUTO_INCREMENT=3;
+
+CREATE TABLE `tutors` (
+  `id` varchar(11) NOT NULL,
+  `name` varchar(100) NOT NULL,
+  PRIMARY KEY  (`id`)
+) TYPE=MyISAM AUTO_INCREMENT=3;
+
+CREATE TABLE `ratings` (
+  `id` varchar(11) NOT NULL,
+  `total_votes` int(11) NOT NULL default 0,
+  `total_value` int(11) NOT NULL default 0,
+  `used_ips` longtext,
+  PRIMARY KEY  (`id`)
+) TYPE=MyISAM AUTO_INCREMENT=3;

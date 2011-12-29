@@ -1,0 +1,6 @@
+<% content_for :title do %>
+  <%= I18n.t('layout.recent') %>
+  <%= I18n.t(controller.controller_name) %>
+<% end %>
+
+<h1><%= yield :title %></h1>

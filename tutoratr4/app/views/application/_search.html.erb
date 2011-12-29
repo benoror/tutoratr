@@ -1,0 +1,6 @@
+<% form_tag '/search' do %>
+  <div class="search-form">
+    <%= text_field_with_auto_complete :tutor, :name, {:autocomplete => "off"}, {:skip_style => true} %> 
+    <%= submit_tag I18n.t('layout.search') %>
+  </div>
+<% end %>

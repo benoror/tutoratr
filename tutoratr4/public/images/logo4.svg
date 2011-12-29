@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="280"
+   height="80"
+   id="svg2365"
+   sodipodi:version="0.32"
+   inkscape:version="0.45.1"
+   sodipodi:docbase="/home/ben/public_html/tutoratr4_layout2/images"
+   sodipodi:docname="logo4.svg"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape"
+   version="1.0"
+   inkscape:export-filename="/home/ben/public_html/tutoratr4_layout2/images/logo.png"
+   inkscape:export-xdpi="67.5"
+   inkscape:export-ydpi="67.5">
+  <defs
+     id="defs2367">
+    <linearGradient
+       id="linearGradient12772">
+      <stop
+         style="stop-color:#55d400;stop-opacity:1;"
+         offset="0"
+         id="stop12774" />
+      <stop
+         style="stop-color:#abff72;stop-opacity:1;"
+         offset="1"
+         id="stop12776" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient13665">
+      <stop
+         style="stop-color:teal;stop-opacity:1;"
+         offset="0"
+         id="stop13667" />
+      <stop
+         style="stop-color:#00afb1;stop-opacity:1;"
+         offset="1"
+         id="stop13669" />
+    </linearGradient>
+    <filter
+       inkscape:collect="always"
+       x="-0.080583915"
+       width="1.1611677"
+       y="-0.29677624"
+       height="1.5935525"
+       id="filter21829">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="2.0442321"
+         id="feGaussianBlur21831" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       x="-0.11568031"
+       width="1.2313606"
+       y="-0.12465481"
+       height="1.2493097"
+       id="filter21835">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="2.3700257"
+         id="feGaussianBlur21837" />
+    </filter>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     gridtolerance="10000"
+     guidetolerance="10"
+     objecttolerance="10"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="2.0000001"
+     inkscape:cx="193.88856"
+     inkscape:cy="13.165966"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     inkscape:window-width="1024"
+     inkscape:window-height="723"
+     inkscape:window-x="0"
+     inkscape:window-y="45"
+     width="280px"
+     height="80px"
+     showborder="true"
+     borderlayer="false" />
+  <metadata
+     id="metadata2370">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-332.31663,-349.67842)">
+    <rect
+       style="opacity:1;fill:#36558a;fill-opacity:1;stroke:none;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect2175"
+       width="376"
+       height="96.5"
+       x="267.73611"
+       y="455.05688"
+       rx="11.192389"
+       ry="11.192389"
+       inkscape:export-filename="/home/ben/public_html/tutoratr3/images/corners.png"
+       inkscape:export-xdpi="72.510445"
+       inkscape:export-ydpi="72.510445" />
+    <g
+       id="g4153"
+       transform="translate(25.46581,14.068242)">
+      <flowRoot
+         xml:space="preserve"
+         id="flowRoot20764"
+         transform="matrix(3.7624615,0,0,3.1372539,-611.58839,-1076.5586)"
+         style="fill:none;fill-opacity:1;stroke:#444444;stroke-width:2.91064429;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.94117647;filter:url(#filter21829)"><flowRegion
+           id="flowRegion20766"
+           style="stroke-width:1.74638653"><rect
+             id="rect20768"
+             width="168.69548"
+             height="60.609154"
+             x="251.52798"
+             y="446.27066"
+             style="fill:none;fill-opacity:1;stroke:#444444;stroke-width:2.91064429;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.94117647" /></flowRegion><flowPara
+           id="flowPara20770"
+           style="font-size:24px;fill:none;fill-opacity:1;stroke:#444444;stroke-width:2.91064429;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.94117647;font-family:Blue Highway">tutoratr</flowPara></flowRoot>      <flowRoot
+         style="fill:#ffffff;stroke:#889aba;stroke-width:2.91064429;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         transform="matrix(3.7624615,0,0,3.1372539,-611.58839,-1076.5586)"
+         id="flowRoot9437"
+         xml:space="preserve"><flowRegion
+           style="stroke-width:1.74638653"
+           id="flowRegion9439"><rect
+             style="fill:#ffffff;stroke:#889aba;stroke-width:2.91064429;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             y="446.27066"
+             x="251.52798"
+             height="60.609154"
+             width="168.69548"
+             id="rect9441" /></flowRegion><flowPara
+           style="font-size:24px;fill:#ffffff;stroke:#889aba;stroke-width:2.91064429;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;font-family:Blue Highway"
+           id="flowPara9443">tutoratr</flowPara></flowRoot>      <flowRoot
+         xml:space="preserve"
+         id="flowRoot11040"
+         transform="matrix(3.7624615,0,0,3.1372539,-611.58839,-1076.5586)"
+         style="fill:#ffffff;stroke:none;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"><flowRegion
+           id="flowRegion11042"
+           style="stroke-width:1.74638653"><rect
+             id="rect11044"
+             width="168.69548"
+             height="60.609154"
+             x="251.52798"
+             y="446.27066"
+             style="fill:#ffffff;stroke:none;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" /></flowRegion><flowPara
+           id="flowPara11046"
+           style="font-size:24px;fill:#ffffff;stroke:none;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;font-family:Blue Highway">tutoratr</flowPara></flowRoot>    </g>
+  </g>
+</svg>

@@ -1,0 +1,19 @@
+<%= render :partial => 'application/index_title' %>
+
+<%= will_paginate @courses, { :previous_label => "&lt;&lt;", :next_label => "&gt;&gt;" } %>
+
+<% @courses.each do |course| %>
+  <div class="tutor">
+    <span class="rating-from">
+      <%= link_to course.code, course, :class => 'rating-institution' %> 
+    </span>
+    <%= link_to course.name, course, :class => 'rating-tutor' %>
+  
+    <div class="rating-sender">
+      <%= I18n.t('datetime.distance_in_words.hace') %> <%=h time_ago_in_words(course.updated_at.to_time) %> <%= I18n.t('datetime.distance_in_words.ago') %>
+    </div>
+    
+  </div>
+<% end %>
+
+<%= will_paginate @courses, { :previous_label => "&lt;&lt;", :next_label => "&gt;&gt;" } %>

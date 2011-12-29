@@ -1,0 +1,15 @@
+<%
+  name = nil if local_assigns[:name].nil?
+%>
+
+<% content_for :title do %>
+  <%= I18n.t(controller.action_name) %>
+  <%= I18n.t(controller.controller_name) %>
+  <% if name then %>
+    : <%= name %>
+  <% end %>
+<% end %>
+
+<% if not name then %>
+  <h1><%= yield :title %></h1>
+<% end %>

@@ -1,0 +1,19 @@
+<% if controller.controller_name == 'search' then %>
+  <h2><%= I18n.t('layout.top_searches') %></h2>
+<% else %>
+  <h2><%= I18n.t(controller.controller_name) %></h2>
+<% end %>
+
+<%= '<span class="recent">'+link_to(I18n.t('recent'), :controller => controller.controller_name, :action => "index")+'</span>' unless ['search'].include?(controller.controller_name) %>
+<%= '<span class="agregar">'+link_to(I18n.t('new'), :controller => controller.controller_name, :action => "new")+'</span>' unless ['search','institutions','countries'].include?(controller.controller_name) %>
+<%= '<span class="top10">'+link_to(I18n.t('top'), '#')+'</span>' unless ['search'].include?(controller.controller_name) %>
+<%= '<span class="popular">'+link_to(I18n.t('popular'), '#')+'</span>' unless ['search','ratings', 'institutions', 'countries'].include?(controller.controller_name) %>
+<%= '<span class="favs">'+link_to(I18n.t('favorites'), '#')+'</span>' unless ['search','institutions', 'countries'].include?(controller.controller_name) %>
+
+<% if controller.controller_name == 'search' then %>
+
+  <span id="queries"></span>
+  <script src="http://www.google.com/coop/query_renderer.js"></script>
+  <script src="http://www.google.com/coop/api/013657888931657590268/cse/5msogeqeiyq/queries/js?callback=(new+PopularQueryRenderer(document.getElementById(%22queries%22))).render"></script>
+
+<% end %>

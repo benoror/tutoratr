@@ -1,0 +1,44 @@
+<% render :partial => 'application/singular_title', :locals => { :name => (@course.code.empty? ? '' : @course.code+' - ' )+@course.name }%>
+
+<h1><%= @course.name %></h1>
+
+<br />
+
+<span class="rating-options-show">
+    <%= link_to(image_tag('nuvola/16x16/edit_add_t.png')+" "+I18n.t('ratings_section.rate'),
+                                                    :controller => 'ratings', :action => 'new', :course_id => @course ) %>
+    <%= link_to(image_tag('nuvola/16x16/bookmark_add_t.png')+" "+I18n.t('ratings_section.bookmark'),
+                                                    '#') %>
+    <%= link_to(image_tag('nuvola/16x16/file_important_t.png')+" "+I18n.t('ratings_section.report'),
+                                                    '#') %>
+</span>
+
+<% if admin? %>
+<span class="rating-options-show admin">
+        <%= link_to 'Edit', edit_course_path(@course) %>
+        <%= link_to 'Destroy', course_path(@course), :method => :delete, :confirm => 'Are u sure?' %>
+</span>
+<% end %>
+
+<br />
+
+<h3>Info</h3>
+
+<div class="tutor-data">
+
+    <%= I18n.t('layout.code') %>: <%= @course.code %>
+
+    <br />
+    <br />
+
+    <%= I18n.t('layout.average') %>: <strong><%= number_with_precision @course.ratings.average('rating'), :precision => 2, :separator => "." %></strong>
+    
+    <br />
+
+</div>
+
+<h3><%= I18n.t('ratings') %></h3>
+
+<ol>
+  <%= render :partial => 'courses/rating', :collection => @course.ratings.sort_by { |r| -r.rating } %>
+</ol>

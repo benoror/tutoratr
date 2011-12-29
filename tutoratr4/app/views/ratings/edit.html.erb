@@ -1,0 +1,40 @@
+<h1>Editing rating</h1>
+
+<% form_for(@rating) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :tutor_id %><br />
+    <%= f.text_field :tutor_id %>
+  </p>
+  <p>
+    <%= f.label :course_id %><br />
+    <%= f.text_field :course_id %>
+  </p>
+  <p>
+    <%= f.label :rating %><br />
+    <%= f.text_field :rating %>
+  </p>
+  <p>
+    <%= f.label :comment %><br />
+    <%= f.text_area :comment %>
+  </p>
+  <p>
+    <%= f.label :sender %><br />
+    <%= f.text_field :sender %>
+  </p>
+  <p>
+    <%= f.label :ip %><br />
+    <%= f.text_field :ip %>
+  </p>
+  <p>
+    <%= f.label :fb_user %><br />
+    <%= f.text_field :fb_user %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @rating %> |
+<%= link_to 'Back', ratings_path %>

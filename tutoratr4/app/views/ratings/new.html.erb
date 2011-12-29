@@ -1,0 +1,51 @@
+<%= stylesheet_link_tag 'star_rating' %>
+<%= javascript_include_tag 'star_rating', :cache => true %>
+	
+<%= render :partial => 'application/singular_title' %>
+
+<div class="standard-form">
+	<% form_for(@rating) do |f| %>
+		<%= f.error_messages %>
+
+		<div class="field">
+			<%= f.label I18n.t('layout.tutor') %>
+			<%= belongs_to_auto_completer :rating, :tutor, :name, {}, {:autocomplete => "off"}, :skip_style => true %>
+		</div>
+		<br />
+		<div class="field">
+			<%= f.label I18n.t('layout.course') %>
+			<%= belongs_to_auto_completer :rating, :course, :name, {}, {:autocomplete => "off"}, :skip_style => true %>
+                </div>
+		<br />
+		<div class="field">
+			<%= f.label I18n.t('layout.comment') %>
+			<%= f.text_area :comment, :rows => 10 %>
+		</div>
+		<br />
+		<div class="field">
+			<%= f.label I18n.t('ratings_section.rate') %>
+			<% rvalue = 0 %>
+			<% rvalue = params[:rating][:rating].to_i unless params[:rating].nil? %>
+			<div id="star" style="margin: 8px 0px 12px 39%;" >
+				<ul id="star" class="star" onmousedown="star.update(event,this)" onmousemove="star.mouse(event,this)">
+				 <li id="starCur" class="curr" title="<%= rvalue %>" style="width: <%= (rvalue*84)/100 %>px;"></li>
+				</ul>
+				<div id="starUser" class="user"><%= rvalue unless rvalue == 0 %></div>
+			</div>
+			<br />
+			<%= f.hidden_field :rating %>
+			<%#= f.select(:rating, %w{ 0 1 2 3 4 5 6 7 8 9 10 }, { :include_blank => true }) %>
+			
+		</div>
+		<br />
+		<div class="field">
+			<%= f.label I18n.t('layout.sender') %>
+			<%= f.text_field :sender %>
+			 (<%= I18n.t('layout.optional') %>)
+		</div>
+		<br />
+		<div class="field">
+			<%= f.submit I18n.t('layout.create') %>
+		</div>
+	<% end %>
+</div>

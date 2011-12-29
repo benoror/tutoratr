@@ -1,0 +1,26 @@
+DELETE FROM tutors
+WHERE id IN (1896, 3789, 5295, 7595, 8260, 8711)
+
+UPDATE tutors
+SET name = 'Med. Rodolfo Jes&uacute;s Trevi&ntilde;o P&eacute;rez', email = 'rojtrevi@itesm.mx'
+WHERE id = 7830
+
+UPDATE tutors
+SET name = 'Ing. Fernando Solar S&aacute;nchez', email = 'fsolar@itesm.mx'
+WHERE id = 7404
+
+UPDATE tutors
+SET name = 'Dr. Javier Ram&iacute;rez Angulo', email = 'jangulo@itesm.mx'
+WHERE id = 6357
+
+UPDATE tutors
+SET name = 'Ing. Jaime Mart&iacute;nez Garza', email = 'jmg@itesm.mx'
+WHERE id = 4769
+
+UPDATE tutors
+SET name = 'Master Luis Gerardo Lemus Burguete', email = 'luisg.lemus@itesm.mx'
+WHERE id = 4195
+
+UPDATE tutors
+SET name = 'Dra. Gloria Margarita Gurrola Pe&ntilde;a', email = 'ggurrola@itesm.mx'
+WHERE id = 3389

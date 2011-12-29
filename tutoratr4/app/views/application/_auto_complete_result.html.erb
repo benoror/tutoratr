@@ -1,0 +1,11 @@
+<%
+  items = (@tutors+@courses).map { 
+            |entry| content_tag('li', link_to(
+                                        params[:tutor][:name] ? highlight(entry[:name], params[:tutor][:name]) : h(entry[:name]), 
+                                        (entry[:type]=='t') ? tutor_path(entry[:id]) : course_path(entry[:id]),
+                                        :class => 'auto'
+                                      )
+                    ) 
+          } 
+%>
+<%= content_tag('ul', items.uniq) %>

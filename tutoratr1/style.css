@@ -1,0 +1,270 @@
+body {
+    background-image: url("bg.png");
+	background-repeat: repeat-x;
+	background-color: #ffffff;
+	font-family: 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color: #008080;
+}
+
+img {
+	text-decoration: none;
+	border: none;
+	color: #008000;
+}
+
+#wrapper {
+	margin: 15px;
+	width: 97%;
+	align: center;
+}
+
+#content {
+    padding-top: 120px;
+	margin-left: 16px;
+	margin-top: 16px;
+	margin-bottom: 16px;
+	margin-right: 180px;
+	
+}
+
+#adsense {
+	margin: 16px;
+	position: absolute;
+	right:16px;
+	top:90px;
+	width:160px;
+}
+
+#adsense_top {
+	position: absolute;
+	top:110px;
+	//width:160px;
+}
+
+#logo {
+    background-image: url("logo.png");
+	background-repeat: no-repeat;
+	height: 60px;
+	width: 208px;
+	margin-bottom: 10px !important;
+	margin-bottom: 13px;
+}
+
+/* FOR IE */
+* html #logo {
+    background:none;
+    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='logo.png' ,sizingMethod=’crop’);
+	height: 60px;
+	width: 208px;
+	margin-bottom: 10px !important;
+	margin-bottom: 13px;
+}
+
+#header {
+    position: absolute;
+    padding-top: 6px !important;
+    padding-top: 4px;
+	//border-bottom:solid 1px #008080;
+}
+
+#menu {
+    width: 750px;
+    padding-top: 6px;
+    position: absolute;
+    top: 57px;
+    //border-bottom:solid 1px #008080;
+}
+
+#search {
+	position: absolute;
+	right: 23px;
+	top: 20px;
+}
+
+input, select, textarea {
+	border: 1px solid #008080;
+	background-color: #ffffff;
+	color: #008080;
+}
+
+.image_btn {
+    background-image: url("search.png");
+    border: none;
+    cursor: pointer;
+    height: 17px;
+    width: 17px;
+}
+
+* html .image_btn {
+    background:none;
+    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='search.png' ,sizingMethod=’crop’);
+    cursor: hand;
+    height: 17px;
+    width: 17px;
+}
+
+.imenu {
+
+    padding-top: 8px;
+	padding-bottom: 1px;
+	padding-left: 10px;
+	padding-right: 10px;
+
+	margin-left: 10px;
+	margin-right: 10px;
+
+	color: #008080;
+	background: none;
+	font-size: 14px;
+}
+
+.imenu a {
+	text-decoration: none;
+	color: #ffffff;
+}
+
+.imenu:hover {
+	//background-color: #008080;
+	//color: #fff;
+	border-top:solid 1px #008080;
+}
+
+.imenu_a {
+    padding-top: 8px;
+	padding-bottom: 1px;
+	padding-left: 10px;
+	padding-right: 10px;
+
+	margin-left: 10px;
+	margin-right: 10px;
+
+	border-top:solid 2px #008080;
+
+	color: #008080;
+	background: #ffffff;
+	//font-size: 12px;
+}
+
+.imenu_a a {
+	text-decoration: none;
+	color: #008080;
+}
+
+.title {
+	font-size: 20px;
+	color: #008000;
+}
+
+.star {
+	height: 57px;
+	width: 57px;
+	background-image: url("bg.png");
+	background-repeat: repeat-x;
+	text-align: center;
+	font-size: 30px;
+	border:dotted 1px #008000;
+	padding-top: 2px;
+	
+	position: absolute;
+	left:56px;
+}
+
+.pic {
+	height: 57px;
+	width: 59px;
+	padding-top: 1px;
+	
+	position: absolute;
+	left: 120px;
+}
+
+.comments {
+	margin-left: 8px;
+}
+
+.comm_tut {
+	color: #008080;
+	font-size: 16px;
+	
+	position: absolute;
+	left:180px;
+}
+.comm_tut a {
+	color: #008080;
+}
+
+.comm_cla {
+	font-size: 14px;
+	color: #008000;
+	
+	position: absolute;
+	left:180px;
+}
+.comm_cla a {
+	text-decoration: none;
+	color: #008000;
+}
+
+.comm_ins {
+	font-size: 10px;
+	color: #008080;
+	
+	position: absolute;
+	left:180px;
+}
+.comm_ins a {
+	text-decoration: none;
+	color: #008080;
+}
+
+.comm_com {
+	font-size: 12px;
+	padding-top: 16px !important;
+    padding-top: 28px;
+}
+
+.captcha {
+	background-image: url("http://www.humanverify.com/a2zverify/a2zimage.asp?id=benoror");
+	height: 10px;
+	width: 30px;
+}
+
+.bloque {
+    padding: 8px;
+    margin-bottom: 8px;
+    border:solid 1px #ffffff;
+    cursor: hand;
+}
+
+.bloque:hover {
+    border:dotted 1px #008000;
+    background-color: #F0F0EF;
+    cursor: pointer !important;
+}
+
+.warning {
+    font-size: 28px;
+    color: #008080;
+}
+
+#bg_bottom {
+    background-color: #FFF;
+	height: 20px;
+	width: 100px;
+	position: absolute;
+	top: 110px;
+	left: 28px;
+}
+
+#bg_bottom2 {
+    background-color: #FFF;
+	height: 15px;
+	width: 130px;
+	position: absolute;
+	top: 110px;
+	right: 75px;
+}

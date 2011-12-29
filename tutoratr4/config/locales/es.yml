@@ -1,0 +1,106 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See http://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+es:
+
+  #Controllers
+  ratings: "Comentarios"
+  tutors: "Profesores"
+  courses: "Cursos"
+  institutions: "Campus"
+  countries: "Pa&iacute;ses"
+  help: "Ayuda"
+
+  #Actions
+  recent: "&Uacute;ltimos"
+  new: "Agregar"
+  show: "Mostrar"
+  top: "Top"
+  popular: "Populares"
+  favorites: "Favoritos"
+  
+  layout:
+    help: "Ayuda"
+    search: "Buscar"
+    donate: "Ayudanos donando"
+    sponsors: "Patrocinadores"
+    top_searches: "Top B&uacute;squedas"
+    search_results: "Resultados de B&uacute;squeda"
+    recent: "&Uacute;ltimos"
+    show: "Mostrar"
+    email: "Correo"
+    average: "Promedio"
+    institution: "Campus"
+    code: "C&oacute;digo"
+    country: "Pa&iacute;s"
+    description: "Descripci&oacute;n"
+    name: "Nombre"
+    create: "Crear"
+    tutor: "Profesor"
+    course: "Curso"
+    comment: "Comentario"
+    sender: "Tu Nombre"
+    optional: "opcional"
+
+  long:
+    rating_created: "Comentario guardado exitosamente."
+    tutor_created: "Profesor guardado exitosamente.<br/>Espera 48 horas para que sea aprobado."
+    course_created: "Curso guardado exitosamente.<br/>Espera 48 horas para que sea aprobado."
+    requirement_1: "Requerimientos"
+    requirement_2: "Antes de sugerir porfavor asegurate que no exista a&uacute;n."
+    requirement_3: "Porfavor danos la mayor informaci&oacute;n posible."
+    requirement_4_1: "El Email y el Campus son &uacute;tiles para verificar la identidad."
+    requirement_4_2: "El C&oacute;digo es &uacute;til para verificar la identidad."
+    requirement_5: "Solo las sugerencias serias ser&aacute;n tomadas en cuenta."
+
+  ratings_section:
+    rate: "Calificar"
+    bookmark: "Favorito"
+    report: "Reportar"
+    by: "por"
+    anonymous: "an&oacute;nimo"
+
+  # Used in distance_of_time_in_words(), distance_of_time_in_words_to_now(), time_ago_in_words()
+  datetime:
+    distance_in_words:
+      hace: "hace"
+      ago: ""
+      half_a_minute: "medio minuto"
+      less_than_x_seconds:
+        one:   "menos de 1 segundo"
+        other: "menos de {{count}} segundos"
+      x_seconds:
+        one:   "1 segundo"
+        other: "{{count}} segundos"
+      less_than_x_minutes:
+        one:   "menos de un minuto"
+        other: "menos de {{count}} minutos"
+      x_minutes:
+        one:   "1 minuto"
+        other: "{{count}} minutos"
+      about_x_hours:
+        one:   "aproximadamente 1 hora"
+        other: "aproximadamente {{count}} horas"
+      x_days:
+        one:   "1 d&iacute;a"
+        other: "{{count}} d&iacute;as"
+      about_x_months:
+        one:   "aproximadamente 1 mes"
+        other: "aproximadamente {{count}} meses"
+      x_months:
+        one:   "1 mes"
+        other: "{{count}} meses"
+      about_x_years:
+        one:   "aproximadamente 1 a&ntilde;o"
+        other: "aproximadamente {{count}} a&ntilde;os"
+      over_x_years:
+        one:   "m&aacute;s de 1 a&ntilde;o"
+        other: "m&aacute;s de {{count}} a&ntilde;os"
+    prompts:
+      year:   "A&ntilde;o"
+      month:  "Mes"
+      day:    "D&iacute;a"
+      hour:   "Hora"
+      minute: "Minuto"
+      second: "Segundo"
+

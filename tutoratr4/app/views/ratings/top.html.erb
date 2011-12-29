@@ -1,0 +1,7 @@
+<%= render :partial => 'application/plural_title' %>
+
+<ol>
+	<% @ratings.each do |rating| %>
+		<%= render(:partial => "rating", :object => rating) %>
+	<% end %>
+</ol>

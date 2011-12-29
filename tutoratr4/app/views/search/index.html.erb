@@ -1,0 +1,50 @@
+<% content_for :title do %> <%= I18n.t('layout.search_results') %> <% end %>
+
+<h1><%= yield :title%></h1>
+
+<% if not @tutors.empty? %>
+  <h3><%= I18n.t('tutors') %></h3>
+  <% @tutors.each do |tutor| %>
+    <div class="tutor">
+      <%= link_to highlight(tutor.name, params[:tutor][:name]), tutor, :class => 'rating-tutor' %>
+    </div>
+  <% end %>
+<% end %>
+
+<% if not @courses.empty? %>
+  <h3><%= I18n.t('courses') %></h3>
+  <% @courses.each do |course| %>
+    <div class="tutor">
+      <%= link_to highlight(course.name, params[:tutor][:name]), course, :class => 'rating-tutor' %>
+    </div>
+  <% end %>
+<% end %>
+
+<!--<style type="text/css">
+    #cse-search-results iframe {
+        width: 564px;
+    }
+</style> 
+<div id="cse-search-results"></div>
+
+<script type="text/javascript">
+    var googleSearchIframeName = "cse-search-results";
+    var googleSearchFormName = "cse-search-box";
+    var googleSearchFrameWidth = 600; 
+    var googleSearchDomain = "www.google.com";
+    var googleSearchPath = "/cse";
+</script>
+
+<script type="text/javascript" src="http://www.google.com/afsonline/show_afs_search.js"></script>-->
+
+
+<!--
+<div id="cse" style="width: 100%;">Loading</div>
+    <script src="http://www.google.com/jsapi" type="text/javascript"></script>
+    <script type="text/javascript">
+        google.load('search', '1');
+        google.setOnLoadCallback(function(){
+            new google.search.CustomSearchControl('013657888931657590268:5msogeqeiyq').draw('cse');
+        }, true);
+</script>
+-->

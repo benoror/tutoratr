@@ -1,0 +1,52 @@
+<% render :partial => 'application/singular_title', :locals => { :name => @tutor.name } %>
+
+<h1><%= @tutor.name %></h1>
+
+<br />
+
+<span class="rating-options-show">
+    <%= link_to(image_tag('nuvola/16x16/edit_add_t.png')+" "+I18n.t('ratings_section.rate'),
+                                                    :controller => 'ratings', :action => 'new', :tutor_id => @tutor ) %>
+    <%= link_to(image_tag('nuvola/16x16/bookmark_add_t.png')+" "+I18n.t('ratings_section.bookmark'),
+                                                    '#') %>
+    <%= link_to(image_tag('nuvola/16x16/file_important_t.png')+" "+I18n.t('ratings_section.report'),
+                                                    '#') %>
+</span>
+
+<% if admin? %>
+<span class="rating-options-show admin">
+        <%= link_to 'Edit', edit_tutor_path(@tutor) %>
+        <%= link_to 'Destroy', tutor_path(@tutor), :method => :delete, :confirm => 'Are u sure?' %>
+</span>
+<% end %>
+
+<br />
+
+<h3>Info</h3>
+
+<div class="tutor-data">
+<%= if @tutor.pic.empty? then image_tag('nopic.jpg', :class => 'rating-pic') else image_tag(@tutor.pic, :class => 'rating-pic') end %>
+
+    <%= I18n.t('layout.institution') %>: 
+    <%= link_to @tutor.institution.name, @tutor.institution, :class => 'rating-institution' %> 
+    <%= link_to(image_tag('flags/'+@tutor.institution.country.code.downcase+'.gif'), @tutor.institution.country) %>
+
+    <br />
+    <br />
+
+    <%= I18n.t('layout.email') %>: <%= mail_to @tutor.email, @tutor.email, :class => 'rating-course'  %>
+
+    <br />
+    <br />
+
+    <%= I18n.t('layout.average') %>: <strong><%= number_with_precision @tutor.ratings.average('rating'), :precision => 2, :separator => "." %></strong>
+    
+    <br />
+
+</div>
+
+<h3><%= I18n.t('ratings') %></h3>
+
+<ol>
+  <%= render :partial => 'tutors/rating', :collection => @tutor.ratings.sort_by { |r| -r.rating } %>
+</ol>

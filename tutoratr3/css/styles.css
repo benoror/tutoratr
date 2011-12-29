@@ -1,0 +1,273 @@
+/**
+ * Main Tags
+ */
+ 
+* { padding: 0; margin: 0; }
+
+body {
+    background: #fff url('../images/pattern.gif') repeat;
+    font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+    font-size: 11px;
+    margin: 0px;
+    padding: 0px;
+    text-align: left;
+}
+
+h1, h2, h3, h4, h5 {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 2px;
+    padding: 0px;
+}
+
+h1 {
+    font-size: 1.3em;
+}
+
+h2 a {
+    font-size: 1.2em;
+    color: #5c75aa; 
+}
+
+h4, h5 {
+    font-size: 1em;
+    color: #aaa;
+}
+
+p {
+    font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+    font-size: 11px;
+}
+
+a {
+    color: #3b5998;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img {
+    border: 0px;
+}
+
+.prevnext {
+    font-size: 11px;
+    color: #aaa;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.title_sec {
+	height: 32px;
+	font-size: 22px;
+	color: #555;
+	padding-left: 40px;
+	padding-top: 3px;
+}
+
+.bottoma a {
+	color: #fff;
+	text-decoration: none;
+	border-bottom: 1px dashed #fff;	
+}
+
+.logo {
+
+padding-left: 10px;
+margin-top: -10px;
+position: absolute;
+
+}
+
+/***********
+  Comment block
+  
+***********/
+
+.comment_block {
+	border: 1px solid #ccc;
+	padding: 8px;
+	margin-bottom: 8px;
+	background: #fff url('../images/bg.gif') repeat-x;
+}
+
+.comment {
+  font-size: 1em;
+  margin-top: 12px;
+  padding: 4px;
+  text-align: justify;
+  display: none;
+}
+
+.rating {
+	font-size: 1.8em;
+	font-weight: bold;
+	color: #fff;
+	line-height: 2.8em;
+	float: right;
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	background: transparent url('../images/bigrating.png') no-repeat;
+}
+
+.expand_comment {
+	text-align: center;
+	background-color: #f3f3ff;
+	margin-left: -7px;
+	margin-right: -8px;
+	margin-top: 12px;
+	margin-bottom: -8px;
+	cursor: pointer;
+}
+
+.expand_comment:hover {
+	background-color: #ddddff;
+}
+
+/***********
+  Navigator
+  
+***********/
+
+#navigator {
+  padding-left: 220px;}
+  
+  #navigator a {
+    text-decoration: none; 
+    color: white; }
+  
+  #navigator ul.main_set {
+    font-size: 11px;
+    float: left;
+    display: block;
+    list-style: none;
+    margin: 0px;
+    padding: 0px; }
+    
+    #navigator .main_set li {
+      float: left;
+      display: block;
+      margin: 0px 10px 0px 0px;
+      font-weight: bold; }
+      
+      #navigator .main_set li a {
+        padding: 41px 16px 12px 16px; 
+		  filter:alpha(opacity=65);
+		  opacity:0.65;
+		  -moz-opacity:0.65;}
+      #navigator .main_set li a.active,
+      #navigator .main_set li a:hover { 
+		  filter:alpha(opacity=100);
+		  opacity:1.0;
+		  -moz-opacity:1.0;}
+
+/***********
+ Institution bar
+  
+***********/
+
+.inst_bar a {
+    text-decoration: none; 
+    padding: 3px 10px;
+    color: white;
+  	border: 1px solid #bdc7d8;
+  	margin-left: 4px;
+  	font-weight: bold;
+}
+
+.inst_bar a:hover {
+    color: #5c75aa;
+    background-color: #CBD3E4;
+}
+
+.inst_barc a {
+    text-decoration: none; 
+    padding: 3px 10px;
+    color: #5c75aa;
+  	border: 1px solid #bdc7d8;
+  	margin-left: 4px;
+  	font-weight: bold;
+    background-color: #CBD3E4;
+}
+
+/***********
+ Searching bar
+  
+***********/
+
+#sbar {
+	text-align: center;
+	padding: 4px;
+}
+
+#sbar a {
+    text-decoration: none; 
+    padding: 3px 10px;
+    color: #5c75aa;
+  	border: 1px solid #bdc7d8;
+  	margin-left: 2px;
+  	margin-right: 2px;
+  	font-weight: bold;
+    background: #CBD3E4;
+}
+
+#sbar a:hover {
+	background-color: transparent;
+    color: white;
+}
+.inputsearch:hover {
+  	border: 1px solid #5c75aa;
+}
+/***********
+ FORM INPUTS
+  
+***********/
+
+.inputtext,
+.inputpassword {
+  	border: 1px solid #ccc;
+  font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+  font-size: 11px;
+  padding: 3px; 
+  width: 87%;}
+  
+.inputtext:hover {
+  	border: 1px solid #999;
+}
+
+textarea,select {
+  border: 1px solid #bdc7d8;
+  padding: 3px;
+  font-size: 11px;
+  font-family: "lucida grande", tahoma, verdana, arial, sans-serif; }
+     
+.inputbutton,
+.inputsubmit {
+  border: 1px solid #bdc7d8;
+  padding: 3px;
+  font-size: 24px;
+  color: #3B5998;
+  font-family: "lucida grande", tahoma, verdana, arial, sans-serif; }
+  text-align: center; }
+
+.inputcheckbox {
+  border: 0px; }
+
+.inputsearch {
+  color #ccc;
+  font-style: italic;
+  background: white url('../images/sr.png') no-repeat 3px 4px;
+  padding-left: 17px; }
+ 
+.inputsearch:focus {
+  color #000;
+  font-style: normal;
+}
+
+.addbtn {
+  background: transparent url('../images/add.png') no-repeat 3px 2px;
+  padding-left: 17px; }
+}

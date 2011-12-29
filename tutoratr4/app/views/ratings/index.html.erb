@@ -1,0 +1,9 @@
+<%= render :partial => 'application/index_title' %>
+
+<%= will_paginate @ratings, { :previous_label => "&lt;&lt;", :next_label => "&gt;&gt;" } %>
+
+<ol>
+  <%= render(@ratings) %>
+</ol>
+
+<%= will_paginate @ratings, { :previous_label => "&lt;&lt;", :next_label => "&gt;&gt;" } %>

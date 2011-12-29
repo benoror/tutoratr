@@ -1,0 +1,362 @@
+/**************
+    Main CSS
+    
+**************/
+
+* { padding: 0; margin: 0; }
+
+body {
+ background: #fff url('../images/bg.gif') repeat-x;
+  font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+  font-size: 11px;
+  margin: 0px;
+  padding: 0px;
+  text-align: left; }
+
+h1, h2, h3, h4, h5 {
+  font-size: 13px;
+  color: #555;
+  margin-bottom: 2px;
+  padding: 0px; }
+
+h1 {
+  font-size: 16px; }
+
+h2 a {
+  color: #5c75aa; 
+}
+
+h4, h5 {
+  font-size: 10px;
+  color: #aaa;}
+
+p {
+  font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+  font-size: 11px;}
+
+a {
+  color: #3b5998;
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: underline;}
+
+.bottoma a {
+	color: #fff;
+	text-decoration: none;
+	border-bottom: 1px dashed #fff;	
+}
+
+img {
+  border: 0px; }
+
+.title_sec {
+	height: 32px;
+	font-size: 18px;
+	color: #555;
+	padding-left: 40px;
+	padding-top: 6px;
+}
+
+#wrapper { 
+ margin: 0 auto;
+ width: 622px;
+}
+#header {
+ color: #fff;
+ width: 602px;
+ height: 25px;
+ float: left;
+ padding: 10px;
+ margin: 0px 0px 0px 0px;
+ background: #3B5998 url('../images/logo.png') no-repeat top left;
+}
+#institutions {
+ text-align: center;
+ float: left;
+ width: 602px;
+ color: #eee;
+ padding: 10px;
+ margin: 0px 0px 0px 0px;
+ background: #5c75aa;
+}
+#navigation {
+ float: left;
+ width: 602px;
+ color: #eee;
+ padding: 10px;
+ margin: 0px 0px 5px 0px;
+ background: #CBD3E4;
+}
+#leftcolumn { 
+ color: #555;
+ border: 1px solid #ccc;
+ margin: 0px 0px 5px 0px;
+ padding: 6px;
+ width: 420px;
+ float: right;
+ background: #fff;
+}
+#rightcolumn { 
+ float: left;
+ color: #555;
+ margin: 0px 5px 5px 0px;
+ padding: 10px;
+ width: 160px;
+ display: inline;
+ border: 1px solid #ccc;
+ background: #fff url('../images/bg.gif') repeat-x;
+}
+#footer { 
+ width: 601px;
+ clear: both;
+ color: #fff;
+ border: 1px solid #ccc;
+ background: #5c75aa;
+ margin: 0px 0px 10px 0px;
+ padding: 10px;
+}
+
+/***********
+  Comment block
+  
+***********/
+
+.comment_block {
+	border: 1px dashed #aaa;
+	padding: 5px;
+	margin-bottom: 10px;
+	background: #fff url('../images/bg.gif') repeat-x;
+}
+
+.comment_block:hover {
+	border: 1px dotted #3b5998;
+}
+
+.comment {
+  border: 1px dashed #ccc;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  padding: 3px;
+  text-align: justify;
+}
+
+.rating {
+	font-size: 12px;
+	font-weight: bold;
+	color: #3b5998;
+	margin-right:2px;
+	padding-top: 9px;
+	float: right;
+	width: 30px;
+	height: 18px;
+	text-align: center;
+	background: url('../images/starrating2.gif') no-repeat;
+}
+
+/***********
+  Navigator
+  
+***********/
+
+#navigator {
+  height: 2em;
+  line-height: 2em; 
+  padding-left: 180px;}
+  
+  #navigator a {
+    text-decoration: none; 
+    color: white; }
+  
+  #navigator ul.main_set {
+    font-size: 13px;
+    float: left;
+    display: block;
+    list-style: none;
+    margin: 0px;
+    padding: 0px; }
+    
+    #navigator .main_set li {
+      float: left;
+      display: block;
+      margin: 0px 10px 0px 0px;
+      font-weight: bold; }
+      
+      #navigator .main_set li a {
+        padding: 17px 10px; }
+      #navigator .main_set li a.active,
+      #navigator .main_set li a:hover { 
+        background: #5c75aa; 
+        border: none;}
+
+/***********
+ Institution bar
+  
+***********/
+
+.inst_bar a {
+    text-decoration: none; 
+    padding: 3px 10px;
+    color: white;
+  	border: 1px solid #bdc7d8;
+  	margin-left: 4px;
+  	font-weight: bold;
+}
+
+.inst_barc a {
+    text-decoration: none; 
+    padding: 3px 10px;
+    color: #5c75aa;
+  	border: 1px solid #bdc7d8;
+  	margin-left: 4px;
+  	font-weight: bold;
+    background: #CBD3E4;
+}
+
+.inst_bar a:hover {
+    color: #5c75aa;
+    background: #CBD3E4;
+}
+
+/***********
+ Searching bar
+  
+***********/
+
+#sbar a {
+    text-decoration: none; 
+    padding: 3px 10px;
+    color: white;
+  	border: 1px solid #bdc7d8;
+}
+    
+/***********
+ Add bar
+  
+***********/
+
+#addbar a {
+	background: #5c75aa url('../images/add.png') no-repeat 3px 2px;
+    text-decoration: none; 
+    padding: 3px 10px;
+    color: white;
+  	border: 1px solid #bdc7d8;
+	padding-left: 17px;
+}
+
+#addbar a:hover {
+	background: #3B5998 url('../images/add.png') no-repeat 3px 2px;
+}
+
+/***********
+ Tut bar
+  
+***********/
+
+#tutbar a {
+	background: #5c75aa url('../images/tut.png') no-repeat 3px 2px;
+	padding-left: 17px;
+}
+
+#tutbar a:hover {
+	background: #3B5998 url('../images/tut.png') no-repeat 3px 2px;
+}
+
+/***********
+ Mat bar
+  
+***********/
+
+#matbar a {
+	background: #5c75aa url('../images/mat.png') no-repeat 3px 2px;
+	padding-left: 17px;
+}
+
+#matbar a:hover {
+	background: #3B5998 url('../images/mat.png') no-repeat 3px 2px;
+}
+
+/***********
+ Facebook bar
+  
+***********/
+
+#fbbar a {
+	background: #5c75aa url('../images/fb.gif') no-repeat 3px 2px;
+	padding-left: 17px;
+}
+
+#fbbar a:hover {
+	background: #3B5998 url('../images/fb.gif') no-repeat 3px 2px;
+}
+
+/***********
+ Options bar
+  
+***********/
+
+.options {
+	font-size: 10px;
+	margin-top: 6px; 
+	padding-bottom: 4px;}
+
+.options a {
+	font-size: 11px;
+    text-decoration: none; 
+    background: #e9e9e9;
+    padding: 0px 8px;
+    color: #3b5998;
+    margin-left: 4px;
+  	border: 1px solid #ccc;}
+
+.options a:hover {
+    text-decoration: none; 
+    background: #3B5998;
+    color: #fff;
+    border: 1px solid #3B5998;}
+
+/***********
+ FORM INPUTS
+  
+***********/
+
+.inputtext,
+.inputpassword {
+  border: 1px solid #bdc7d8;
+  font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+  font-size: 11px;
+  padding: 3px; }
+
+textarea,select {
+  border: 1px solid #bdc7d8;
+  padding: 3px;
+  font-size: 11px;
+  font-family: "lucida grande", tahoma, verdana, arial, sans-serif; }
+     
+.inputbutton,
+.inputsubmit {
+  border: 1px solid #bdc7d8;
+  padding: 3px;
+  font-size: 24px;
+  color: #3B5998;
+  font-family: "lucida grande", tahoma, verdana, arial, sans-serif; }
+  text-align: center; }
+
+.inputcheckbox {
+  border: 0px; }
+
+.inputsearch {
+  color #ccc;
+  font-style: italic;
+  background: white url('../images/sr.png') no-repeat 3px 4px;
+  padding-left: 17px; }
+ 
+.inputsearch:focus {
+  color #000;
+  font-style: normal;
+}
+
+.addbtn {
+  background: transparent url('../images/add.png') no-repeat 3px 2px;
+  padding-left: 17px; }
+}

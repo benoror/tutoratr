@@ -1,0 +1,116 @@
+/**
+ * Tutoratr Layout CSS
+ */
+
+#wrapper { 
+    margin: 0 auto;
+    margin-top: -8px;
+    width: 622px;
+}
+
+#header {
+    color: #fff;
+    width: 622px;
+    height: 47px;
+    float: left;
+    padding-top: 20px;
+    padding-bottom: 00px;
+    margin: 0px 0px 0px 0px;
+    background: #3B5998 url('../images/header.gif') repeat-x top left;
+}
+
+#institutions {
+    text-align: center;
+    float: left;
+    width: 614px;
+    color: #eee;
+    padding-top: 10px;
+    height: 24px;
+    margin: 0px 0px 4px 0px;
+    background: #5c75aa url('../images/bar2.gif') repeat-x -3px 0px;
+    border-left: 4px solid #3B5998;
+    border-right: 4px solid #3B5998;
+    border-bottom: 4px solid #3B5998;
+}
+
+#navigation {
+    float: left;
+    width: 608px;
+    color: #eee;
+    padding-top: 4px;
+    padding-left: 4px;
+    height: 26px;
+    margin-bottom: 6px;
+    background: #CBD3E4 url('../images/bar3.jpg') repeat-x -3px 0px;
+    border: 4px solid #3B5998;
+}
+
+#rightcolumn { 
+    color: #555;
+    border: 1px solid #ccc;
+    margin: 0px 0px 5px 0px;
+    padding: 6px;
+    width: 416px;
+    float: right;
+    position: relative;
+    min-height: 100px;
+    background: #fff url('../images/bg.gif') repeat-x;
+}
+
+#history {
+    border: 1px solid #ccc;
+    margin: 0px 0px 5px 0px;
+    padding: 4px;
+    width: 420px;
+    float: right;
+    position: relative;
+    height: 16px;
+    background: #fff url('../images/bg.gif') repeat-x;
+    overflow: auto;
+}
+
+#leftcolumn { 
+    float: left;
+    margin: 0px 0px 0px 0px;
+    padding: 0px;
+    width: 160px;
+    display: inline;
+}
+
+#left_search { 
+    float: left;
+    color: #555;
+    margin: 0px 4px 4px 0px;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    background: #fff url('../images/bg.gif') repeat-x;
+}
+
+#left_ajax { 
+    float: left;
+    margin: 0px 4px 4px 0px;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    background: #fff url('../images/bg.gif') repeat-x;
+}
+
+#left_ad { 
+    float: left;
+    color: #555;
+    margin: 0px 4px 4px 0px;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    background: #fff url('../images/bg.gif') repeat-x;
+}
+
+#footer { 
+    width: 602px;
+    clear: both;
+    color: #fff;
+    background: #5c75aa;
+    margin: 0px 0px 10px 0px;
+    padding: 10px;
+}

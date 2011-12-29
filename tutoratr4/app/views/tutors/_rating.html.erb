@@ -1,0 +1,20 @@
+
+		<li class="rating">
+		
+			<div class="rating-num" style="color: rgb(<%= (204-0.51*rating.rating).to_i.to_s+','+(51+1.53*rating.rating).to_i.to_s%>,100);">
+				<p><%=h rating.rating %></p>
+			</div>
+			
+                        <%= link_to rating.course.code_name, rating.course, :class => 'rating-tutor' %>
+			
+			<div class="rating-body">
+				<%=h truncate(rating.comment, :length => 128) %>
+				<%= link_to I18n.t('layout.show'), rating %>
+			</div>
+                        <br />
+			<div class="rating-sender">
+                            <%= render :partial => 'application/sender',
+                                       :locals => { :sender => rating.sender, :date => rating.created_at } %>
+			</div>
+			
+		</li>

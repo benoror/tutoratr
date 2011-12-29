@@ -1,0 +1,46 @@
+<% render :partial => 'application/singular_title', 
+          :locals => { :name => @rating.tutor.name }%>
+
+<% content_for :title do %>
+- <%= @rating.course.name%> [<%= @rating.rating%>]
+<% end %>
+
+<div class="rating-show">
+	<%= if @rating.tutor.pic.empty? then image_tag('nopic.jpg', :class => 'rating-pic') else image_tag(@rating.tutor.pic, :class => 'rating-pic') end %>
+	<div class="rating-num" style="color: rgb(<%= (204-0.51*@rating.rating).to_i.to_s+','+(51+1.53*@rating.rating).to_i.to_s%>,100);">
+		<p><%=h @rating.rating %></p>
+	</div>
+
+	<span class="rating-from">
+		<%= link_to @rating.tutor.institution.name, @rating.tutor.institution, :class => 'rating-institution' %> 
+		<%= link_to(image_tag('flags/'+@rating.tutor.institution.country.code.downcase+'.gif')	, @rating.tutor.institution.country) %>
+	</span>
+	<%= link_to @rating.tutor.name, @rating.tutor, :class => 'rating-tutor' %>
+
+	<br/>
+	<%= link_to @rating.course.code_name, @rating.course, :class => 'rating-course' %>
+
+	<div class="rating-body-show">
+		<%=h @rating.comment %>
+	</div>
+	<span class="rating-options-show">
+                <%= link_to(image_tag('nuvola/16x16/edit_add_t.png')+" "+I18n.t('ratings_section.rate'),
+                                                                :controller => 'ratings', :action => 'new', :tutor_id => @rating.tutor, :course_id => @rating.course ) %>
+                <%= link_to(image_tag('nuvola/16x16/bookmark_add_t.png')+" "+I18n.t('ratings_section.bookmark'),
+                                                                '#') %>
+                <%= link_to(image_tag('nuvola/16x16/file_important_t.png')+" "+I18n.t('ratings_section.report'),
+                                                                '#') %>
+	</span>
+
+        <% if admin? %>
+        <span class="rating-options-show admin">
+                <%= link_to 'Edit', edit_rating_path(@rating) %>
+                <%= link_to 'Destroy', rating_path(@rating), :method => :delete, :confirm => 'Are u sure?' %>
+        </span>
+        <% end %>
+
+	<div class="rating-sender-show">
+              <%= render :partial => 'application/sender',
+                         :locals => { :sender => @rating.sender, :date => @rating.created_at } %>
+	</div>
+</div>

@@ -1,0 +1,196 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <title>Tutoratr - <%= yield :title %> </title>
+  <link rel="shortcut icon" href="/images/favicon.gif" />
+  <%= stylesheet_link_tag 'reset', 'tutoratr' %>
+  <%= javascript_include_tag :defaults, :cache => true %>
+</head>
+<body>
+
+   <div id="wrapper">
+   
+         <div id="logo" style="z-index: 10;">
+            <span class="beta">Beta</span>
+         </div>
+   	
+         <div id="header" class="round">
+          
+				
+                <a href="http://apps.facebook.com/tutoratr/">Facebook</a>
+                
+				<span style="border-right: 1px solid #889ABA; width:1px; margin-left:1px; margin-right:4px;"></span>
+				
+                <%= link_to 'Blog', "http://tutoratr.wordpress.com/" %>
+                
+				<span style="border-right: 1px solid #889ABA; width:1px; margin-left:1px; margin-right:4px;"></span>
+				
+                <%= link_to 'RSS', "#" %>
+
+                                <span style="border-right: 1px solid #889ABA; width:1px; margin-left:1px; margin-right:4px;"></span>
+
+                <%= link_to I18n.t('layout.help'), :controller => 'help' %>
+	      
+		 	 <div id="institutions" class="round">
+		 	 
+		 	 <ul>
+		 	 
+		 	 	<li style="display: inline;list-style-type: none;">
+					<%= link_to I18n.t('ratings'), ratings_path, :class => "comentarios" %>
+				</li>
+				
+		 	 	<li style="display: inline;list-style-type: none;">
+					<span style="border-left: 1px solid #5c75aa; margin-left:1px; margin-right:6px;">
+					<span style="border-right: 1px solid #889ABA; width:1px;"></span>
+					</span>
+				</li>
+		 	 
+		 	 	<li style="display: inline;list-style-type: none;">
+					<%= link_to I18n.t('tutors'), tutors_path, :class => "profesores" %>
+				</li>
+				
+		 	 	<li style="display: inline;list-style-type: none;">
+					<span style="border-left: 1px solid #5c75aa; margin-left:1px; margin-right:6px;">
+					<span style="border-right: 1px solid #889ABA; width:1px;"></span>
+					</span>
+				</li>
+				
+		 	 	<li style="display: inline;list-style-type: none;">
+					<%= link_to I18n.t('courses'), courses_path, :class => "materias" %>
+		 	 	</li>
+				
+		 	 	<li style="display: inline;list-style-type: none;">
+					<span style="border-left: 1px solid #5c75aa; margin-left:1px; margin-right:6px;">
+					<span style="border-right: 1px solid #889ABA; width:1px;"></span>
+					</span>
+				</li>
+				
+		 	 	<li style="display: inline;list-style-type: none;">
+					<%= link_to I18n.t('institutions'), institutions_path, :class => "escuelas" %>
+		 	 	</li>
+				
+		 	 	<li style="display: inline;list-style-type: none;">
+					<span style="border-left: 1px solid #5c75aa; margin-left:1px; margin-right:6px;">
+					<span style="border-right: 1px solid #889ABA; width:1px;"></span>
+					</span>
+				</li>
+				
+		 	 	<li style="display: inline;list-style-type: none;">
+					<%= link_to I18n.t('countries'), countries_path, :class => "paises" %>
+		 	 	</li>
+			
+			 </ul>
+                
+			 </div>
+		 
+		 
+			 <div id="navigation">
+			 
+            <% form_tag '', :method => 'GET', :class => 'locale' do %>
+              <%= select_tag 'locale', options_for_select(LANGUAGES, I18n.locale),
+                :onchange => 'this.form.submit()' %>
+              <%= submit_tag 'submit' %>
+              <%= javascript_tag "$$('.locale input').each(Element.hide)" %>
+            <% end %>
+              
+                        <%= render :partial => 'application/search' %>
+			<!-- Google CSE Search Box Begins  -->
+                        <!-- <form action="/search" id="cse-search-box">
+                            <div class="search-form">
+                                <input type="hidden" name="cx" value="013657888931657590268:5msogeqeiyq" />
+                                <input type="hidden" name="cof" value="FORID:10" />
+                                <input type="hidden" name="hl" value="<%#= I18n.locale %>" />
+                                <input type="hidden" name="ie" value="UTF-8" />
+                                <input type="text" name="q" class="search" />
+                                <input type="submit" name="sa" value="<%#= I18n.t 'layout.search' %>" />
+                            </div>
+                        </form>
+
+                        <script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=cse-search-box&lang=es"></script>
+-->
+			<!-- Google CSE Search Box Ends -->
+
+			 </div>
+			 
+		 </div>
+		 
+		 <div id="leftcolumn">
+		 	<div id="left_search" class="round">
+                          
+                          <%= render :partial => 'application/left_menu' %>
+
+		 	</div>
+		 
+			<div id="left_ajax">
+				<h2><%= I18n.t 'layout.donate' %></h2>
+                                <!--
+				<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+				<input type="hidden" name="cmd" value="_donations">
+				<input type="hidden" name="business" value="CUX8M2G29Q92E">
+				<input type="hidden" name="lc" value="MX">
+				<input type="hidden" name="item_name" value="Tutoratr">
+				<input type="hidden" name="item_number" value="TUTORATR01">
+				<input type="hidden" name="currency_code" value="MXN">
+				<input type="hidden" name="bn" value="PP-DonationsBF:btn_donate_LG.gif:NonHosted">
+                                -->
+				<input type="image" src="https://www.paypal.com/es_XC/i/btn/btn_donate_LG.gif" name="submit" alt="" />
+				<!--
+                                <img alt="" border="0" src="https://www.paypal.com/es_XC/i/scr/pixel.gif" width="1" height="1">
+				</form>
+                                -->
+			</div>
+			
+			<div id="left_ad">
+				<h2><%= I18n.t 'layout.sponsors' %></h2>
+				<script type="text/javascript"><!--
+				google_ad_client = "pub-8824615395440396";
+				/* 120x240, t4 */
+				google_ad_slot = "8255962557";
+				google_ad_width = 120;
+				google_ad_height = 240;
+				//-->
+				</script>
+				<script type="text/javascript"
+				src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+				</script>
+
+                                <h2>Facebook</h2>
+                                <script src="http://static.ak.facebook.com/js/api_lib/v0.4/FeatureLoader.js.php/es_LA" type="text/javascript"></script><script type="text/javascript">FB.init("4ba14807f76b6a844c0ad9c430ea1328");</script><fb:fan profile_id="2699655972" stream="1" connections="" width="160"></fb:fan><div style="font-size:8px; padding-left:10px"><a href="http://www.facebook.com/apps/application.php?id=2699655972">ProfesoresTEC - Tutoratr</a> on Facebook</div>
+			</div>
+		 </div>
+		 
+		 <div id="history">
+			 <script type="text/javascript"><!--
+				google_ad_client = "pub-8824615395440396";
+				/* 468x60, t4 */
+				google_ad_slot = "8640347713";
+				google_ad_width = 468;
+				google_ad_height = 60;
+				//-->
+				</script>
+				<script type="text/javascript"
+				src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+			</script>
+		 </div>
+		
+		 <div id="rightcolumn">
+
+                            <% if flash[:notice] -%>
+				<p class="flash-notice" ><%= flash[:notice] %></p>
+	                    <% end -%>
+
+				<%= yield %>
+
+		 </div>
+         
+		 <div id="footer" class="round" style="text-align: center;">
+		  2007-2009 Tutoratr	
+	     </div>
+	 
+   </div>
+
+</body>
+</html>

@@ -1,0 +1,8 @@
+<%= I18n.t('ratings_section.by') %> <b>
+<%= if sender.nil? then
+                                h(sender)
+                  else
+                                I18n.t('ratings_section.anonymous')
+                  end
+%></b>
+<%= I18n.t('datetime.distance_in_words.hace') %> <%= time_ago_in_words(date.to_time) %> <%= I18n.t('datetime.distance_in_words.ago') %>

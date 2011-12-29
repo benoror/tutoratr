@@ -1,0 +1,4 @@
+#star ul.star { LIST-STYLE: none; MARGIN: 0; PADDING: 0; WIDTH: 85px; HEIGHT: 20px; LEFT:0px; TOP: -5px; POSITION: relative; FLOAT: left; BACKGROUND: url('../images/stars.gif') repeat-x; CURSOR: pointer; }
+#star li { PADDING: 0; MARGIN: 0; FLOAT: left; DISPLAY: block; WIDTH: 85px; HEIGHT: 20px; TEXT-DECORATION: none; text-indent: -9000px; Z-INDEX: 20; POSITION: absolute; PADDING: 0; }
+#star li.curr { BACKGROUND: url('../images/stars.gif') left 25px; FONT-SIZE: 1px; }
+#star div.user { LEFT: 5px; POSITION: relative; FLOAT: left; FONT-SIZE: 13px; FONT-FAMILY: Arial; COLOR: #888; }
